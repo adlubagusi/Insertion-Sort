@@ -1,0 +1,14 @@
+#area_angka_container,#area_hasil_container{
+    width: 100%;
+}
+.box-angka{
+    display: inline-block;
+    padding: 5px;
+}
+.box-hasil{
+    display: inline-block;
+    padding: 5px;
+}
+.box-hasil input{
+    background: #ffffff!important;
+}

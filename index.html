@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Insertion Sort</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-offset-3" style="margin-top: 10px;">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        Pengurutan angka sederhana dengan metode Insertion Sort
+                    </div>
+                    <div class="panel-body">
+                        <input type="number" class="form-control" id="jumlah_angka" onkeyup="seekAngka()" placeholder="Masukkan Jumlah Bilangan">
+                        <input type="hidden" class="form-control" id="angka_tmp">    
+                        <div class="well well-default" id="area_angka_container" style="display: none;">
+                            <div class="row" id="area_angka"></div>
+                            <div class="row" style="margin-top: 15px;">
+                                <div class="col-md-8">
+                                    <label for="">Metode Pengurutan</label>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="urut_asc">
+                                                <input type="radio" name="optUrut" id="urut_asc" checked>
+                                                Kecil ke besar
+                                            </label>
+                                        </div>   
+                                        <div class="col-md-6">
+                                            <label for="urut_desc">
+                                                <input type="radio" name="optUrut" id="urut_desc">
+                                                Besar ke kecil
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" style="padding: 5px;">
+                                    <button class="btn btn-success btn-block" onclick="prosesUrut()">Urutkan!</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="well well-default" id="area_hasil_container" style="display: none;">
+                            <div class="row" id="area_hasil"></div>
+                            <div class="row">
+                                <div class="col-md-12" style="padding: 5px;">
+                                    <button class="btn btn-danger btn-block" onclick="prosesClear()">Hapus Semua!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
